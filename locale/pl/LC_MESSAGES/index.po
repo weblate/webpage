@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Fortran-lang.org website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 14:47+0530\n"
-"PO-Revision-Date: 2024-10-10 08:30+0000\n"
+"PO-Revision-Date: 2024-10-16 19:16+0000\n"
 "Last-Translator: Agnieszka Ziora <agaxx02@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/fortran-lang/"
 "webpage/pl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../source/community.md:10
@@ -4160,7 +4160,7 @@ msgstr ""
 
 #: ../../source/learn/best_practices/type_casting.md:10
 msgid "Work Arrays"
-msgstr ""
+msgstr "Tablice robocze"
 
 #: ../../source/learn/best_practices/type_casting.md:12
 msgid ""
@@ -4168,6 +4168,9 @@ msgid ""
 "and unpacked by the called routine. This is the old way -- e.g., how LAPACK "
 "does it."
 msgstr ""
+"Podaj \"tablicę roboczą\", która jest spakowana ze wszystkim, czego "
+"potrzebuje funkcja wywołująca i rozpakowana przez wywołaną procedurę. Jest "
+"to stary sposób - np. tak jak robi to LAPACK."
 
 #: ../../source/learn/best_practices/type_casting.md:16
 #: ../../source/learn/best_practices/type_casting.md:86
@@ -4175,7 +4178,7 @@ msgstr ""
 #: ../../source/learn/best_practices/type_casting.md:233
 #: ../../source/learn/best_practices/type_casting.md:284
 msgid "Integrator:"
-msgstr ""
+msgstr "Integrator:"
 
 #: ../../source/learn/best_practices/type_casting.md:45
 #: ../../source/learn/best_practices/type_casting.md:124
@@ -4184,11 +4187,11 @@ msgstr ""
 #: ../../source/learn/best_practices/type_casting.md:314
 #: ../../source/learn/best_practices/type_casting.md:424
 msgid "Usage:"
-msgstr ""
+msgstr "Użycie:"
 
 #: ../../source/learn/best_practices/type_casting.md:78
 msgid "General Structure"
-msgstr ""
+msgstr "Ogólna struktura"
 
 #: ../../source/learn/best_practices/type_casting.md:80
 msgid ""
@@ -4198,6 +4201,12 @@ msgid ""
 "need to change from passing, say, real numbers to, say, and instantiation of "
 "a text editor."
 msgstr ""
+"Zdefiniuj strukturę generalną, która zawiera wariację, których faktycznie "
+"potrzebujesz (lub, których będziesz potrzebował w przyszłości). Ten "
+"pojedynczy typ struktury może się później zmienić jeśli będzie to koniecznie "
+"i gdy pozwolą na to przyszłe potrzeby/pomysły, jednak prawdopodobnie nie "
+"trzeba będzie zmieniać np. przekazywania liczb rzeczywistych i instancji "
+"edytora tekstu."
 
 #: ../../source/learn/best_practices/type_casting.md:157
 msgid ""
@@ -4206,20 +4215,28 @@ msgid ""
 " Dirac. Each would then be sufficiently general and contain all the needed "
 "pieces with all the right labels."
 msgstr ""
+"Potrzebna jest tylko elastyczność. Na przykład, możesz zdefiniować w tym "
+"celu dwa typy struktur, jeden dla Schroedingera i jeden dla Diraca. Każdy z "
+"nich byłby wtedy wystarczająco ogólny i zawierałby wszystkie potrzebne "
+"elementy ze właściwymi etykietami."
 
 #: ../../source/learn/best_practices/type_casting.md:162
 msgid ""
 "Point is: it needn't be \"one abstract type to encompass all\" or bust. There"
 " are natural and viable options between \"all\" and \"none\"."
 msgstr ""
+"Chodzi o to, że nie musi to być „jeden abstrakcyjny typ obejmujący wszystko” "
+"lub totalna porażka. Istnieją naturalne i wykonalne opcje między „wszystkim” "
+"a „niczym”."
 
 #: ../../source/learn/best_practices/type_casting.md:165
 msgid "Private Module Variables"
-msgstr ""
+msgstr "Prywatne zmienne modułu"
 
 #: ../../source/learn/best_practices/type_casting.md:167
 msgid "Hide the variable arguments completely by passing in module variables."
 msgstr ""
+"Ukryj całkowicie zmienne argumenty poprzez przekazanie zmiennych modułu."
 
 #: ../../source/learn/best_practices/type_casting.md:226
 msgid ""
@@ -4228,6 +4245,10 @@ msgid ""
 "way. However, with a bit of thought, usually there is a better, safer, more "
 "explicit way along the lines of II or IV."
 msgstr ""
+"Najlepiej jest jednak unikać takich zmiennych globalnych (nawet jeśli są "
+"tylko pół-globalne) jeśli to możliwe. Czasami jednak może to być najbardziej "
+"przejrzysty i najprostszy sposób. Często z odrobiną namysłu istnieje lepsza, "
+"bezpieczniejsza i bardziej bezpośrednia droga dzięki sposobom II lub IV."
 
 #: ../../source/learn/best_practices/type_casting.md:231
 #: ../../source/news/2021/05-01-Fortran-Newsletter-May-2021.md:208
